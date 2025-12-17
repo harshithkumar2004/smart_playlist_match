@@ -17,30 +17,7 @@ A local audio analysis and recommendation system that matches uploaded audio cli
 - **Mood–Tempo Weight Slider**: Lets users control how shown mood vs. tempo affects ranking.
 - **Low-Confidence Fallback**: Displays *“Not Confident”* when mood prediction confidence is below a threshold.
 
-## Quick Start
 
-### Installation
-
-```bash
-# Clone the repository
-git clone <git-repo-url>
-cd smart-playlist-matcher
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-### Run the App
-
-```bash
-# Option 1: Train model first (recommended)
-python .\app\train_model.py --audio-dir datasets/audio_catalog --labels datasets/labels.csv
-
-# Option 2: Run app (will use rule-based classification if no model exists)
-python app.py
-```
-
-The app will launch at `http://localhost:7860`
 
 ## Requirements
 
@@ -58,7 +35,7 @@ soundfile
 
 ### 1. Upload Audio
 - Click "Upload Audio File" and select a 10-60 second audio clip
-- Supported formats: MP3, WAV, FLAC, OGG, etc.
+- Supported formats: MP3, WAV etc.
 
 ### 2. Adjust Weights (Optional)
 - **Mood Weight**: How much to prioritize mood matching (default: 70%)
