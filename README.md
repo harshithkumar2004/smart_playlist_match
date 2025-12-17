@@ -82,21 +82,33 @@ soundfile
 
 ```
 
-smart-playlist-app/
-├── app.py                      # Main Gradio application
-├── train_model.py              # Model training script
-├── requirements.txt            # Python dependencies
-├── README.md                   # Project documentation
-├── models/
-│   └── mood_classifier.pkl     # Trained model (generated)
-├── db/
-│   └── playlist_matcher.db     # SQLite database (generated)
-├── datasets/
-│   ├── audio_catalog/          # Optional: catalog audio
-│   │   ├── track1.mp3
-│   │   ├── track2.mp3
-│   │   └── ...
-│   └── labels.csv
+smart_playlist_match/
+│
+├── app/
+│   ├── __init__.py
+│   ├── app.py                # Gradio UI (main entry point)
+│   ├── train_model.py        # Train mood classifier
+│   ├── create_catalog.py     # Build catalog features
+│   │
+│   ├── catalog/              # Processed audio features
+│   │   └── catalog.pkl
+│   │
+│   ├── datasets/             # Raw audio + labels
+│   │   ├── audio_catalog/
+│   │   └── labels.csv
+│   │
+│   ├── models/               # Trained ML models
+│   │   └── mood_classifier.pkl
+│   │
+│   └── db/                   # Local database
+│       └── playlist_matcher.db
+│
+├── .gradio/                  # Gradio cache/config (optional)
+│
+├── .gitignore
+├── README.md
+├── requirements.txt
+
 
 ```
 
