@@ -144,13 +144,13 @@ python .\app\create_catalog.py
 ```
 ## Running the Project Locally
 
-Firstly, download entire project files from the repo
+- Firstly, download entire project file zip from the repo
+- Extract all files from zip
+- Enter into project folder
+- On the address bar, type **cmd**
+then, follow the below steps exactly : 
 
-```bash
-cd smart-playlist-matcher
-```
 
-(Optional but recommended)
 
 ```bash
 python -m venv venv
@@ -193,12 +193,14 @@ Run the app:
 ```bash
 python app/app.py
 ```
-Open in browser:
+CTRL+ CLICK on :
 
 ```
 http://localhost:7860
 ```
-**NOTE:** While running the application, as soon as you open the Gradio interface, upload an audio file and click **Analyze**, check the terminal. It will display **“Analyzing…”**. This might take some time. If it takes too long, simply refresh the browser and upload an audio file and click **Analyze**. It will work . ( Refreshing is needed only for the first time ) 
+to open in browser. 
+
+**VERY IMPORTANT NOTE:** While running the application, as soon as you open the Gradio interface, upload an audio file and click **Analyze**, check the terminal. It will display **“Analyzing…”**. This might take some time. If it takes too long, simply refresh the browser and upload an audio file and click **Analyze**. It will work . ( Refreshing is needed only for the first time ) 
 
 
 
